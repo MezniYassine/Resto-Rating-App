@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sign_up">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/resto2" />
+
+    <RelativeLayout
+        android:layout_width="333dp"
+        android:layout_height="703dp"
+        android:background="@drawable/border_background"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".Sign_up">
+
+        <TextView
+            android:id="@+id/textViewHeaderNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Inscription"
+            android:textColor="#000000"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:hint="@string/label_nom"
+            android:inputType="textPersonName"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/black"
+            android:textColorHint="#494545"
+            />
+
+        <EditText
+            android:id="@+id/editTextPrenom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextNom"
+            android:layout_marginTop="8dp"
+            android:inputType="textPersonName"
+            android:hint="@string/label_prenom"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/black"
+            android:textColorHint="#494545"/>
+
+        <EditText
+            android:id="@+id/editTextAdresse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextPrenom"
+            android:layout_marginTop="8dp"
+            android:inputType="textPostalAddress"
+            android:hint="@string/label_adresse"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/black"
+            android:textColorHint="#494545"/>
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextAdresse"
+            android:layout_marginTop="8dp"
+            android:inputType="textEmailAddress"
+            android:hint="@string/label_email"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/black"
+            android:textColorHint="#494545"
+            />
+        <EditText
+            android:id="@+id/editTextTelephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextEmail"
+            android:layout_marginTop="8dp"
+            android:inputType="phone"
+            android:hint="@string/label_telephone"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/black"
+            android:textColorHint="#494545"
+            />
+
+        <Button
+            android:id="@+id/buttonValider"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextTelephone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="@string/button_valider"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/alert"
+            android:layout_width="395dp"
+            android:layout_height="39dp"
+            android:layout_below="@+id/buttonValider"
+            android:layout_marginTop="107dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

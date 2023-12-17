@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundTint="#000000"
+    tools:context=".SecondActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/resto2" />
+
+    <RelativeLayout
+        android:layout_width="333dp"
+        android:layout_height="703dp"
+        android:background="@drawable/border_background"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".RestaurantFormActivity">
+
+        <TextView
+            android:id="@+id/textViewHeaderNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-100dp"
+            android:gravity="center"
+            android:text="Enregistrement Restaurant"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/editTextNomRestaurant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewMessage"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/black"
+            android:hint="Nom du Restaurant"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="#494545" />
+
+        <EditText
+            android:id="@+id/editTextAdresseRestaurant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextNomRestaurant"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/black"
+            android:hint="Adresse du Restaurant"
+            android:inputType="textPostalAddress"
+            android:textColor="@color/black"
+            android:textColorHint="#494545" />
+
+
+        <EditText
+            android:id="@+id/editTextAvisRestaurant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextAdresseRestaurant"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/black"
+            android:hint="Donnez votre avis"
+            android:inputType="textMultiLine"
+            android:textColor="@color/black"
+            android:textColorHint="#494545" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewEtoiles"
+            android:layout_marginTop="8dp"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:progressTint="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/textViewEtoiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextAvisRestaurant"
+            android:layout_marginTop="80dp"
+            android:text="Noter ce restaurant"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/buttonValiderRestaurant"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/black"
+            android:hapticFeedbackEnabled="false"
+            android:text="@string/button_valider"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

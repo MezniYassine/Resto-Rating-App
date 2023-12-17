@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="label_nom">Nom</string>
+    <string name="label_prenom">Prénom</string>
+    <string name="label_adresse">Adresse</string>
+    <string name="label_email">E-mail</string>
+    <string name="label_telephone">Téléphone</string>
+    <string name="button_valider">Valider</string>
+    <string name="label_nom_restaurant">Nom du Restaurant</string>
+    <string name="label_adresse_restaurant">Adresse du Restaurant</string>
+    <string name="label_avis_restaurant">Avis sur le Restaurant</string>
+    <string name="label_etoiles">Nombre d\'étoiles</string>
+    <string name="button_valider_restaurant">Valider</string>
+    <string name="remerciment">Arigato</string>
+</resources>

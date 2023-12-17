@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/resto2">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="394dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/border_background"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/border_background"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/review_id_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="1"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/nomResto"
+                android:layout_width="153dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="8dp"
+                android:text="resto"
+                app:layout_constraintStart_toEndOf="@+id/review_id_txt"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:text="Nom de restaurant : "
+                app:layout_constraintStart_toEndOf="@+id/review_id_txt"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="14dp"
+                android:text="Adresse"
+                app:layout_constraintStart_toEndOf="@+id/review_id_txt"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/adresse"
+                android:layout_width="50dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="152dp"
+                android:layout_marginTop="12dp"
+                android:text="5"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/nomResto" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="14dp"
+                android:text="Avis :"
+                app:layout_constraintStart_toEndOf="@+id/review_id_txt"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/Avis"
+                android:layout_width="50dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="168dp"
+                android:layout_marginTop="16dp"
+                android:text="5"
+                app:layout_constraintStart_toEndOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/adresse" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="14dp"
+                android:text="Rating en étoile"
+                app:layout_constraintStart_toEndOf="@+id/review_id_txt"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="50dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="104dp"
+                android:layout_marginTop="20dp"
+                android:text="5"
+                app:layout_constraintStart_toEndOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/Avis" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
